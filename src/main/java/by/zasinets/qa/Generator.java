@@ -6,10 +6,11 @@ public class Generator implements Random {
 
     @Override
     public int[] generateNumbers() {
+        int a = -1;
+        int b = 10;
         for (int i = 0; i < newArray.length; i++) {
-            newArray[i] = (int) Math.round((Math.random() * newArray.length) );
+            newArray[i] = a + (int) (Math.random() * b);
         }
         return newArray;
     }
 }
-
