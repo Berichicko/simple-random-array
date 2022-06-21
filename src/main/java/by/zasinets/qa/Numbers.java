@@ -8,7 +8,7 @@ public class Numbers implements Numerical {
     @Override
     public int findNumbers() {
         for (int i = 0; i < fullArray.length; i++) {
-            if (fullArray[i] % 2 == 0 && fullArray[i] > 0) {
+            if ((fullArray[i] % 2 != 0) && fullArray[i] > 0) {
                 positiveOddNumbers++;
             }
         }

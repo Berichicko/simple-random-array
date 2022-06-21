@@ -7,7 +7,7 @@ public class Generator implements Random {
     @Override
     public int[] generateNumbers() {
         for (int i = 0; i < newArray.length; i++) {
-            newArray[i] = (int) Math.round((Math.random() * newArray.length) + 1);
+            newArray[i] = (int) Math.round((Math.random() * newArray.length) );
         }
         return newArray;
     }
